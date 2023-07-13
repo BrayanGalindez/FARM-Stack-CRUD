@@ -45,18 +45,18 @@ function TaskForm(){
                     <h1
                       className="text-3xl font-bold my-4"
                     >
-                        {params.id ? "Update Task" : "Create Task"}
+                        {params.id ? "Actualizar tarea" : "Crear tarea"}
                     </h1>
                     <input 
                     type="text"
-                    placeholder="title" 
+                    placeholder="titulo" 
                     className="block py-2 px-3 mb-4 w-full text-black"
                     onChange={(e) => setTitle(e.target.value)}
                     value={title}
                     autoFocus
                     />
                     <textarea 
-                    placeholder="description" 
+                    placeholder="descripcion" 
                     rows={3} 
                     className="block py-2 px-3 mb-4 w-full text-black"
                     onChange={(e) => setDescription(e.target.value)}
@@ -66,7 +66,7 @@ function TaskForm(){
                     className="bg-white hover:bg-slate-800 hover:text-white text-slate-800 py-2 px-4 rounded"
                     >
                         
-                        {params.id ? "Update Task" : "Create Task"}
+                        {params.id ? "Actualizar tarea" : "Crear tarea"}
                     </button>
                 </form>
                 {
@@ -83,7 +83,7 @@ function TaskForm(){
                             }
                         }}
                         >
-                            Delete
+                            Eliminar
                         </button>
                     )
                 }
